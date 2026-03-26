@@ -43,7 +43,7 @@ export default function Services() {
                                 whileInView="show"
                                 viewport={{ once: true }}
                             >
-                                Services Focused on <span className="text-gradient">Results</span>
+                                Services Focused on Results
                             </motion.h1>
                         </div>
                         <div className="d-flex justify-content-center">
@@ -233,7 +233,7 @@ export default function Services() {
                             <div className="mkt-card p-3 h-100">
                                 <div className="mkt-icon fs-3">🎨</div>
                                 <div className="mkt-title mt-2">Graphic Design</div>
-                                <div className="section-sub">Stunning visuals — from social media creatives to brochures, banners, and brand identity assets.</div>
+                                <div className="section-sub">Stunning visuals - from social media creatives to brochures, banners, and brand identity assets.</div>
                             </div>
                         </div>
 
@@ -283,8 +283,10 @@ export default function Services() {
                     <p className="mt-3 fs-6 cta-service-desc">Let’s have a free consultation and find the best solution.</p>
 
                     <div className="d-flex justify-content-center gap-3 mt-4 flex-wrap">
-                        <a href="/Contact" className="btn btn-primary service-btn">Free Consultation →</a>
-                        <a href="/Pricing" className="btn btn-outline-dark see-pricing-btn">See Pricing</a>
+                        <a href="/Contact" onMouseMove={handleMove}
+                            onMouseLeave={handleLeave} className="btn btn-primary service-btn">Free Consultation →</a>
+                        <a href="/Pricing" onMouseMove={handleMove}
+                            onMouseLeave={handleLeave} className="btn btn-outline-dark see-pricing-btn">See Pricing</a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,195 @@
+.about-story-bg {
+    background-color: #070911 !important;
+}
+
+:root {
+    --bg: #060810;
+    --bg2: #0b0f1c;
+    --bg3: #111629;
+    --accent: #4cff9a;
+    --accent2: #7c5cfc;
+    --gold: #f5c842;
+    --green: #4cff9a;
+    --red: #ff5f7a;
+    --text: #e8eaf2;
+    --muted: #7a82a0;
+    --border: rgba(255, 255, 255, 0.07);
+    --card-bg: rgba(17, 22, 41, 0.85);
+    --glow: 0 0 40px rgba(0, 229, 255, 0.15);
+    --radius: 10px;
+    --radius-sm: 8px;
+    --primary-font: "Zalando Sans Expanded", sans-serif;
+    --secondary-font: "DM Sans", sans-serif;
+}
+
+
+.section-tag {
+    font-size: .7rem !important;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent) !important;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.section-tag::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--accent) !important;
+}
+
+.blob-wrap {
+    position: relative;
+}
+
+.about-blob {
+    width: 100% !important;
+    max-width: 500px !important;
+    aspect-ratio: 1 !important;
+    background: linear-gradient(135deg, rgba(0, 229, 255, .08), rgba(124, 92, 252, .12));
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
+    border: 1px solid rgba(0, 229, 255, .12) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    animation: float 6s ease-in-out infinite !important;
+    text-align: center !important;
+    padding: 40px !important;
+}
+
+.blob-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.blob-icon {
+    font-size: 3.8rem;
+}
+
+.blob-inner h3 {
+    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-size: 1.4rem !important;
+    font-weight: 700;
+    color: #e8eaf2 !important;
+    letter-spacing: -.03em;
+}
+
+.blob-inner p {
+    font-size: .82rem;
+    color: var(--muted);
+    line-height: 1.6px;
+}
+
+.cb-val {
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--accent)
+}
+
+.cb-lbl {
+    color: var(--muted);
+    font-size: .68rem
+}
+
+.corner-badge {
+    position: absolute !important;
+    background: var(--card-bg) !important;
+    border: 1px solid var(--border);
+    border-radius: 12px !important;
+    padding: 12px 16px !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+    font-size: .78rem !important;
+    font-weight: 500 !important;
+}
+
+.flex-33 {
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .flex-33 {
+        flex: 0 0 48%;
+    }
+}
+
+@media (min-width: 992px) {
+    .flex-33 {
+        flex: 0 0 30%;
+    }
+}
+
+.section-alt {
+    background-color: #0C101D !important;
+}
+
+.value-card {
+    background: rgba(255, 255, 255, .02);
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius) !important;
+    padding: 26px !important;
+    transition: all .3s
+}
+
+.value-card:hover {
+    cursor: default !important;
+    border-color: rgba(0, 255, 115, 0.3) !important;
+}
+
+.section-process-bg {
+    background-color: #070911 !important;
+}
+
+.step-divider {
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+@media (max-width: 991px) {
+    .step-divider {
+        border-right: none !important;
+    }
+}
+
+.step-num {
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: -.05em;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px
+}
+
+.step-title {
+    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 8px !important;
+    color: #e8eaf2 !important;
+}
+
+.flex-25 {
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .flex-25 {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .flex-25 {
+        flex: 0 0 25%;
+    }
+}

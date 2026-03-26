@@ -231,8 +231,8 @@ body {
     background-color: #09101B;
 
     background-image:
-        radial-gradient(circle at 20% 1%, rgba(76, 255, 154, 0.1), transparent 20%),
-        radial-gradient(circle at 85% 100%, rgba(0, 229, 255, 0.1), transparent 20%),
+        radial-gradient(circle at 20% 1%, rgba(3, 3, 34, 0.9), transparent 30%),
+        radial-gradient(circle at 85% 100%, rgba(21, 21, 47, 0.9), transparent 30%),
 
         linear-gradient(rgba(255, 255, 255, 0.02) 0.5px, transparent 0.9px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0.5px, transparent 0.9px);
