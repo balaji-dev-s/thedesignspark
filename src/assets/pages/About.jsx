@@ -1,8 +1,10 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 import "../pages/about.css"
 
 export default function About() {
+
     const fadeUp = {
         hidden: { opacity: 0, y: 10 },
         show: {
@@ -25,6 +27,36 @@ export default function About() {
         const btn = e.currentTarget;
         btn.style.transform = `translate(0px, 0px)`;
     };
+    const StatItem = ({ target, label, suffix = "" }) => {
+        const [count, setCount] = useState(0);
+
+        useEffect(() => {
+            let start = 0;
+            const duration = 2500;
+            const increment = target / (duration / 16);
+
+            const counter = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    setCount(target);
+                    clearInterval(counter);
+                } else {
+                    setCount(Math.floor(start));
+                }
+            }, 16);
+
+            return () => clearInterval(counter);
+        }, [target]);
+
+        return (
+            <div className="stat-item">
+                <div className="stat-num text-center">{count}{suffix}</div>
+                <div className="stat-label text-center">{label}</div>
+            </div>
+        );
+    };
+
+
     return (
         <div>
             <section className="grid-section-bg">
@@ -124,6 +156,15 @@ export default function About() {
 
                 </div>
             </section>
+            {/* Stats Band */}
+            <section className="section stats-band about-story-bg">
+                <div className="container d-flex justify-content-between flex-wrap">
+                    <StatItem target={50} label="Completed Projects" />
+                    <StatItem target={40} label="Happy Clients" />
+                    <StatItem target={8} label="Years in Industry" />
+                    <StatItem target={98} label="Client Satisfaction" suffix="%" />
+                </div></section>
+
             {/* Values */}
             <section className="section container-fluid section-alt py-5">
                 <div className="container py-5 px-3 px-sm-0">
@@ -294,6 +335,80 @@ export default function About() {
 
                 </div>
             </section>
+
+            <section className="section section-tech-bg py-5">
+                <div className="container py-5 px-3 px-sm-0">
+                    {/* HEADER */}
+                    <div className="mb-5">
+                        <motion.div
+                            className="section-tag"
+                            variants={fadeUp}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true }}
+                        >
+                            Technologies
+                        </motion.div>
+
+                        <motion.h2
+                            className="section-title"
+                            variants={fadeUp}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true }}
+                        >
+                            Our Tech Stack
+                        </motion.h2>
+
+                        <motion.p
+                            className="page-sub"
+                            variants={fadeUp}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true }}
+                        >
+                            We work with the best tools in the industry to build robust, scalable digital products.
+                        </motion.p>
+                    </div>
+
+                    <div className="tech-grid">
+                        <div className="tech-pill">WordPress</div>
+                        <div className="tech-pill">WooCommerce</div>
+                        <div className="tech-pill">Elementor Pro</div>
+                        <div className="tech-pill">Crocoblock</div>
+                        <div className="tech-pill">React.js</div>
+                        <div className="tech-pill">Node.js</div>
+                        <div className="tech-pill">PHP / Laravel</div>
+                        <div className="tech-pill">MySQL</div>
+                        <div className="tech-pill">Flutter</div>
+                        <div className="tech-pill">React Native</div>
+                        <div className="tech-pill">Adobe XD</div>
+                        <div className="tech-pill">Figma</div>
+                        <div className="tech-pill">Adobe Photoshop</div>
+                        <div className="tech-pill">Google Ads</div>
+                        <div className="tech-pill">Meta Ads</div>
+                        <div className="tech-pill">SEO Tools</div>
+                    </div>
+                </div>
+            </section>
+
+            {/* CTA */}
+
+            <div className="container-fluid cta-service-bg py-5 text-center cta-strip">
+                <div className="container px-3 py-5 px-sm-0">
+                    <h2 className="cta-service-title">
+                        Let's Build Your <span className="text-gradient">Dream Project</span>
+                    </h2>
+                    <p className="mt-3 fs-6 cta-service-desc">We're excited to hear about your next project. Let's talk!</p>
+
+                    <div className="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+                        <a href="/Contact" onMouseMove={handleMove}
+                            onMouseLeave={handleLeave} className="btn btn-primary service-btn">Get In Touch →</a>
+                        <a href="/Services" onMouseMove={handleMove}
+                            onMouseLeave={handleLeave} className="btn btn-outline-dark see-pricing-btn">Our Services</a>
+                    </div>
+                </div>
+            </div>
 
         </div>
     )
