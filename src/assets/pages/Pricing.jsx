@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import "../pages/pricing.css"
-import FAQ from '../components/Faq';
+import "../pages/pricing.css";
+import FAQ from '../components/FAQ.jsx';
 
 export default function Pricing() {
     const fadeUp = {
