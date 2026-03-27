@@ -119,7 +119,7 @@ export default function Work() {
                 <div className="container px-3 py-5 px-sm-0">
                     <h2 className="cta-service-title">
                         Want Your Project
-                        in  <br /> You <span className="text-gradient">Our Portfolio?</span>
+                        in <span className="text-gradient">Our Portfolio?</span>
                     </h2>
                     <p className="mt-3 fs-6 cta-service-desc">Let's create something remarkable together.</p>
 

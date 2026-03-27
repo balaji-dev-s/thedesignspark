@@ -38,7 +38,7 @@ export default function Pricing() {
                     <div className="d-flex flex-column gap-1">
                         <div className="d-flex justify-content-center">
                             <motion.h1
-                                className="section-title"
+                                className="section-title text-center"
                                 variants={fadeUp}
                                 initial="hidden"
                                 whileInView="show"
