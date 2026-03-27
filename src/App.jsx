@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import { initClickSpark } from "./assets/components/ClickSpark.js";
+import { useEffect } from "react";
+
 import NavBar from './assets/components/NavBar';
 
 import About from "./assets/pages/About";
@@ -13,6 +16,15 @@ import Contact from "./assets/pages/Contact";
 import Home from './assets/pages/Home';
 
 export default function App() {
+
+  useEffect(() => {
+    const cleanup = initClickSpark();
+
+    return () => {
+      cleanup && cleanup();
+    };
+  }, []);
+
   return (
     <>
       <NavBar />

@@ -42,7 +42,7 @@ export default function About() {
                         started.current = true;
 
                         let start = 0;
-                        const duration = 2500;
+                        const duration = 1500;
                         const increment = target / (duration / 16);
 
                         const counter = setInterval(() => {
@@ -178,9 +178,9 @@ export default function About() {
             {/* Stats Band */}
             <section className="section stats-band about-story-bg">
                 <div className="container d-flex justify-content-between flex-wrap">
-                    <StatItem target={50} label="Completed Projects" />
-                    <StatItem target={40} label="Happy Clients" />
-                    <StatItem target={8} label="Years in Industry" />
+                    <StatItem target={50} label="Completed Projects" suffix="+" />
+                    <StatItem target={40} label="Happy Clients" suffix="+" />
+                    <StatItem target={8} label="Years in Industry" suffix="+" />
                     <StatItem target={98} label="Client Satisfaction" suffix="%" />
                 </div></section>
 

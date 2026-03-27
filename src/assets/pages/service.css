@@ -35,19 +35,19 @@ body {
     gap: 64px;
     align-items: center;
     padding: 80px 0;
-    border-bottom: 1px solid var(--border)
+    border-bottom: 1px solid var(--border);
 }
 
 .service-block:last-child {
-    border-bottom: none
+    border-bottom: none;
 }
 
 .service-block.reverse {
-    direction: rtl
+    direction: rtl;
 }
 
 .service-block.reverse>* {
-    direction: ltr
+    direction: ltr;
 }
 
 .svc-num {
@@ -157,19 +157,19 @@ body {
     letter-spacing: .08em;
     text-transform: uppercase;
     color: var(--muted);
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .marketing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
-    margin-top: 48px
+    margin-top: 48px;
 }
 
 .mkt-icon {
     font-size: 1.6rem;
-    margin-bottom: 12px
+    margin-bottom: 12px;
 }
 
 .mkt-title {
@@ -210,7 +210,7 @@ body {
     font-size: .7rem !important;
     letter-spacing: .12em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--accent) !important;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -223,7 +223,7 @@ body {
     display: block;
     width: 24px;
     height: 1px;
-    background: var(--accent)
+    background: var(--accent) !important;
 }
 
 .grid-section-bg {

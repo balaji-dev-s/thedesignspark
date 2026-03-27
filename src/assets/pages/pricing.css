@@ -1,0 +1,289 @@
+:root {
+    --bg: #060810;
+    --bg2: #0b0f1c;
+    --bg3: #111629;
+    --accent: #4cff9a;
+    --accent2: #48fe9f;
+    --gold: #f5c842;
+    --green: #4cff9a;
+    --red: #ff5f7a;
+    --text: #e8eaf2;
+    --muted: #7a82a0;
+    --border: rgba(255, 255, 255, 0.07);
+    --card-bg: rgba(17, 22, 41, 0.85);
+    --glow: 0 0 40px rgba(0, 229, 255, 0.15);
+    --radius: 10px;
+    --radius-sm: 8px;
+    --primary-font: "Zalando Sans Expanded", sans-serif;
+    --secondary-font: "DM Sans", sans-serif;
+}
+
+.addon-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 16px !important;
+    margin-top: 40px !important;
+}
+
+.addon-card {
+    background: rgba(255, 255, 255, .02) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius) !important;
+    padding: 22px !important;
+    transition: all .3s !important;
+}
+
+.addon-card:hover {
+    border-color: rgba(0, 255, 72, 0.285) !important;
+    transform: translateY(-2px) !important;
+    cursor: default;
+}
+
+.addon-icon {
+    font-size: 1.4rem !important;
+    margin-bottom: 10px !important;
+}
+
+.addon-title {
+    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 4px !important;
+    color: white;
+}
+
+.addon-desc {
+    font-size: .78rem !important;
+    color: var(--muted) !important;
+    line-height: 1.55 !important;
+    margin-bottom: 10px !important;
+}
+
+.addon-price {
+    font-size: .82rem !important;
+    color: var(--accent) !important;
+    font-weight: 500 !important;
+}
+
+@media(max-width:1024px) {
+    .addon-grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+@media(max-width:768px) {
+    .addon-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.faq-bg {
+    background: #060810 !important;
+}
+
+
+.custom-q-bg {
+    background: linear-gradient(135deg, rgba(0, 229, 255, .04), rgba(124, 92, 252, .08)) !important;
+    border: 1px solid rgba(0, 229, 255, .14) !important;
+    border-radius: 20px !important;
+    text-align: center !important;
+}
+
+.price-section-bg {
+    background-color: #060810 !important;
+}
+
+
+.pricing-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 22px !important;
+    margin-top: 56px !important;
+}
+
+.price-card {
+    background: rgba(255, 255, 255, .025) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 20px !important;
+    padding: 36px 30px !important;
+    position: relative !important;
+    transition: all .3s !important;
+}
+
+.price-card:hover:not(.featured) {
+    border-color: rgba(255, 255, 255, .12) !important;
+    transform: translateY(-4px) !important;
+}
+
+.price-card.featured {
+    background: linear-gradient(135deg, rgba(0, 229, 255, .06), rgba(124, 92, 252, .1)) !important;
+    border-color: rgba(0, 255, 102, 0.25) !important;
+    transform: scale(1.03) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .4), 0 0 60px rgba(0, 229, 255, .07) !important;
+}
+
+.price-badge {
+    position: absolute !important;
+    top: -12px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background: linear-gradient(135deg, #06e7f6, var(--accent)) !important;
+    color: black !important;
+    font-size: .67rem !important;
+    font-weight: 600 !important;
+    letter-spacing: .08em !important;
+    text-transform: uppercase !important;
+    padding: 4px 14px !important;
+    border-radius: 20px !important;
+    white-space: nowrap !important;
+}
+
+.price-tier {
+    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-size: .68rem !important;
+    font-weight: 700 !important;
+    letter-spacing: .12em !important;
+    text-transform: uppercase !important;
+    color: var(--muted) !important;
+    margin-bottom: 6px !important;
+}
+
+.price-name {
+    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 22px !important;
+    letter-spacing: -.03em !important;
+    color: #e8eaf2 !important;
+}
+
+.price-launch {
+    font-size: .77rem !important;
+    color: var(--muted) !important;
+    margin-bottom: 8px !important;
+    text-decoration: line-through !important;
+}
+
+.price-amount {
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 3px !important;
+    margin-bottom: 4px !important;
+    color: #e8eaf2 !important;
+}
+
+.currency {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    color: var(--muted) !important;
+}
+
+.amount {
+    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-size: 2.8rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -.05em !important;
+}
+
+.price-renewal {
+    font-size: .76rem !important;
+    color: var(--muted) !important;
+    margin-bottom: 26px !important
+}
+
+.price-renewal span {
+    color: var(--accent2) !important;
+}
+
+.price-divider {
+    height: 1px !important;
+    background: var(--border) !important;
+    margin: 22px 0 !important;
+}
+
+.price-features {
+    list-style: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    margin-bottom: 28px !important;
+}
+
+.price-features li {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    font-size: .82rem !important;
+    color: var(--muted) !important;
+}
+
+.price-features li::before {
+    content: '✓' !important;
+    color: var(--accent) !important;
+    font-weight: 700 !important;
+    flex-shrink: 0 !important;
+}
+
+.btn-price {
+    display: block !important;
+    text-align: center !important;
+    padding: 13px !important;
+    border-radius: 10px !important;
+    font-weight: 500 !important;
+    font-size: .87rem !important;
+    text-decoration: none !important;
+    transition: all .2s !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important
+}
+
+.btn-price:hover {
+    border-color: rgba(255, 255, 255, .2) !important;
+    background: rgba(255, 255, 255, .04) !important;
+}
+
+.featured .btn-price {
+    background: linear-gradient(135deg, #06e7f6, var(--accent)) !important;
+    border: none !important;
+    color: black !important;
+    box-shadow: 0 8px 24px rgba(0, 229, 255, .25) !important;
+    font-weight: 600 !important;
+}
+
+.featured .btn-price:hover {
+    opacity: .85 !important;
+    transform: translateY(-1px) !important;
+}
+
+@media(max-width:1024px) {
+    .pricing-grid {
+        grid-template-columns: 1fr !important;
+        max-width: 480px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .price-card.featured {
+        transform: none !important;
+    }
+}
+
+.page-sub {
+    font-size: 1.07rem !important;
+    color: var(--muted) !important;
+    text-align: center !important;
+    margin: 0 auto 36px !important;
+    line-height: 1.75 !important;
+}
+
+.price-card-info {
+    text-align: center !important;
+    margin-top: 28px !important;
+    font-size: .85rem !important;
+    color: var(--muted) !important;
+}
+
+.price-contact-btn {
+    color: var(--accent) !important;
+    text-decoration: none !important;
+}
