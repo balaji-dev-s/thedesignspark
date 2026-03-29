@@ -271,7 +271,6 @@
 .page-sub {
     font-size: 1.07rem !important;
     color: var(--muted) !important;
-    text-align: center !important;
     margin: 0 auto 36px !important;
     line-height: 1.75 !important;
 }

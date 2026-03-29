@@ -93,7 +93,7 @@ export default function Work() {
                             </motion.h1>
                         </div>
                         <div className="d-flex justify-content-center">
-                            <motion.h6 className="page-sub mt-1 mb-5"
+                            <motion.h6 className="page-sub mt-1 mb-5 text-center"
                                 variants={fadeUp}
                                 initial="hidden"
                                 whileInView="show"

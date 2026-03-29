@@ -96,7 +96,7 @@ export default function About() {
                             </motion.h1>
                         </div>
                         <div className="d-flex justify-content-center">
-                            <motion.h6 className="page-sub mt-1 mb-5"
+                            <motion.h6 className="page-sub mt-1 mb-5 text-center"
                                 variants={fadeUp}
                                 initial="hidden"
                                 whileInView="show"
@@ -185,7 +185,7 @@ export default function About() {
                 </div></section>
 
             {/* Values */}
-            <section className="section container-fluid section-alt py-5">
+            <section className="section container-fluid section-alt py-3 py-sm-5">
                 <div className="container py-5 px-3 px-sm-0">
 
 
@@ -276,7 +276,7 @@ export default function About() {
                 </div>
             </section>
             {/* Process */}
-            <section className="section section-process-bg py-5">
+            <section className="section section-process-bg py-3 py-sm-5">
                 <div className="container py-5 px-3 px-sm-0">
 
                     {/* HEADER */}
@@ -316,7 +316,7 @@ export default function About() {
 
                         {/* STEP 1 */}
                         <motion.div className="flex-25 position-relative step-divider" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
-                            <div className="process-step p-4 h-100">
+                            <div className="process-step p-1 p-sm-4 h-100">
                                 <div className="step-num mb-2">01</div>
                                 <div className="step-title mb-2">Discover & Analyse</div>
                                 <p className="page-sub small">We dive deep into your business, goals, competitors, and target audience to shape a clear digital strategy.</p>
@@ -325,7 +325,7 @@ export default function About() {
 
                         {/* STEP 2 */}
                         <motion.div className="flex-25 position-relative step-divider" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.1 }}>
-                            <div className="process-step p-4 h-100">
+                            <div className="process-step p-1 p-sm-4 h-100">
                                 <div className="step-num mb-2">02</div>
                                 <div className="step-title mb-2">Design & Prototype</div>
                                 <p className="page-sub small">Our designers craft wireframes and high-fidelity prototypes that balance aesthetics with user experience.</p>
@@ -334,7 +334,7 @@ export default function About() {
 
                         {/* STEP 3 */}
                         <motion.div className="flex-25 position-relative step-divider" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.2 }}>
-                            <div className="process-step p-4 h-100">
+                            <div className="process-step p-1 p-sm-4 h-100">
                                 <div className="step-num mb-2">03</div>
                                 <div className="step-title mb-2">Develop & Test</div>
                                 <p className="page-sub small">Our engineers build with best-in-class technologies, rigorously tested across all devices and browsers.</p>
@@ -343,7 +343,7 @@ export default function About() {
 
                         {/* STEP 4 */}
                         <motion.div className="flex-25 position-relative" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.3 }}>
-                            <div className="process-step p-4 h-100">
+                            <div className="process-step p-1 p-sm-4 h-100">
                                 <div className="step-num mb-2">04</div>
                                 <div className="step-title mb-2">Launch & Grow</div>
                                 <p className="page-sub small">We deploy, monitor, and continue to support your digital product as your business scales and evolves.</p>
