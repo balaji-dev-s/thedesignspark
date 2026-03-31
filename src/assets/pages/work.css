@@ -1,0 +1,192 @@
+:root {
+    --bg: #060810;
+    --bg2: #0b0f1c;
+    --bg3: #111629;
+    --accent: #4cff9a;
+    --accent2: #48fe9f;
+    --gold: #f5c842;
+    --green: #4cff9a;
+    --red: #ff5f7a;
+    --text: #e8eaf2;
+    --muted: #7a82a0;
+    --border: rgba(255, 255, 255, 0.07);
+    --card-bg: rgba(17, 22, 41, 0.85);
+    --glow: 0 0 40px rgba(0, 229, 255, 0.15);
+    --radius: 10px;
+    --radius-sm: 8px;
+    --primary-font: "Zalando Sans Expanded", sans-serif;
+    --secondary-font: "DM Sans", sans-serif;
+}
+
+.filter-tabs {
+    display: flex !important;
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+    margin-bottom: 36px !important;
+    justify-content: center !important;
+}
+
+.filter-btn {
+    padding: 9px 20px !important;
+    border-radius: 100px !important;
+    font-size: .8rem !important;
+    font-weight: 500 !important;
+    border: 1px solid var(--accent) !important;
+    background: transparent !important;
+    color: var(--muted) !important;
+    cursor: pointer !important;
+    transition: all .25s !important;
+    font-family: 'DM Sans', sans-serif !important;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: rgba(0, 255, 170, 0.08) !important;
+    border-color: rgba(0, 255, 34, 0.15) !important;
+    color: var(--accent) !important;
+}
+
+.filter-btn.active {
+    box-shadow: 0 0 12px rgba(0, 255, 34, 0.15) !important;
+}
+
+
+.works-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 18px !important;
+}
+
+.work-card {
+    border-radius: 14px !important;
+    overflow: hidden !important;
+    background: var(--bg2) !important;
+    border: 1px solid var(--border) !important;
+    transition: all .35s !important;
+    cursor: pointer !important;
+}
+
+.work-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0, 255, 60, 0.25) !important;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 255, 60, 0.06) !important;
+}
+
+.work-card.hidden {
+    display: none !important;
+}
+
+.work-thumb {
+    position: relative !important;
+    overflow: hidden !important;
+    aspect-ratio: 4/3 !important;
+    background: var(--bg3) !important;
+}
+
+.work-thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top !important;
+    display: block !important;
+    transition: transform .5s cubic-bezier(.23, 1, .32, 1) !important;
+}
+
+.work-card:hover .work-thumb img {
+    transform: scale(1.05) translateY(-2%) !important;
+}
+
+.work-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(to top, rgba(0, 0, 0, .75) 0%, rgba(0, 255, 38, 0.08) 100%) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    opacity: 0 !important;
+    transition: opacity .3s !important;
+}
+
+.work-card:hover .work-overlay {
+    opacity: 1 !important;
+}
+
+.work-overlay-text {
+    background: rgba(0, 255, 4, 0.15) !important;
+    border: 1px solid rgba(0, 255, 38, 0.4) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    backdrop-filter: blur(8px) !important;
+    padding: 7px 18px !important;
+    border-radius: 100px !important;
+    font-size: .72rem !important;
+    font-weight: 600 !important;
+    color: var(--accent) !important;
+    letter-spacing: .08em !important;
+    text-transform: uppercase !important;
+}
+
+.work-meta {
+    padding: 16px 18px 18px !important;
+}
+
+.work-title {
+    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-size: .88rem !important;
+    font-weight: 700 !important;
+    color: #e8eaf2 !important;
+}
+
+.work-url {
+    font-size: .7rem !important;
+    color: var(--muted) !important;
+    margin-bottom: 10px !important;
+    font-family: var(--secondary-font) !important;
+}
+
+.work-tags {
+    display: flex !important;
+    gap: 5px !important;
+    flex-wrap: wrap !important;
+    font-family: var(--secondary-font) !important;
+}
+
+.work-tag {
+    font-size: .62rem !important;
+    color: var(--muted) !important;
+    background: rgba(255, 255, 255, .04) !important;
+    padding: 3px 9px !important;
+    border-radius: 100px !important;
+    border: 1px solid var(--border) !important;
+    transition: all .2s !important;
+}
+
+.work-card:hover .work-tag {
+    border-color: rgba(0, 255, 60, 0.15) !important;
+    color: rgba(0, 255, 60, 0.7) !important;
+}
+
+.works-stats {
+    display: flex !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    background: var(--bg2) !important;
+}
+
+@media(max-width:1100px) {
+    .works-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media(max-width:768px) {
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media(max-width:480px) {
+    .works-grid {
+        grid-template-columns: 1fr !important;
+    }
+}

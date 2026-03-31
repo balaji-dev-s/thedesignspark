@@ -1,7 +1,34 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import "../pages/work.css";
 export default function Work() {
+    const [activeFilter, setActiveFilter] = useState("all");
+    const works = [
+        { id: 1, title: "Richmond Medicare", url: "richmondhealth.in", image: "https://source.unsplash.com/600x400/?medical,website", category: "cms", tags: ["Healthcare", "CMS"] },
+        { id: 2, title: "Urban Threads", url: "urbanthreads.com", image: "https://source.unsplash.com/600x400/?fashion,ecommerce", category: "ecommerce", tags: ["Fashion", "E-Commerce"] },
+        { id: 3, title: "Nova Portfolio", url: "nova.dev", image: "https://source.unsplash.com/600x400/?portfolio,website", category: "web", tags: ["Portfolio", "Web"] },
+        { id: 4, title: "BrandForge Studio", url: "brandforge.io", image: "https://source.unsplash.com/600x400/?branding,design", category: "branding", tags: ["Branding", "Identity"] },
+        { id: 5, title: "GreenLeaf Organics", url: "greenleaf.in", image: "https://source.unsplash.com/600x400/?organic,website", category: "cms", tags: ["Organic", "CMS"] },
+        { id: 6, title: "TechGear Shop", url: "techgear.store", image: "https://source.unsplash.com/600x400/?electronics,ecommerce", category: "ecommerce", tags: ["Electronics", "Shop"] },
+        { id: 7, title: "Pixel Agency", url: "pixelagency.io", image: "https://source.unsplash.com/600x400/?agency,website", category: "web", tags: ["Agency", "Web"] },
+        { id: 8, title: "StartupX Branding", url: "startupx.co", image: "https://source.unsplash.com/600x400/?startup,branding", category: "branding", tags: ["Startup", "Brand"] },
+        { id: 9, title: "MediCare Plus", url: "medicareplus.in", image: "https://source.unsplash.com/600x400/?hospital,website", category: "cms", tags: ["Medical", "CMS"] },
+        { id: 10, title: "Sneaker Hub", url: "sneakerhub.com", image: "https://source.unsplash.com/600x400/?shoes,ecommerce", category: "ecommerce", tags: ["Shoes", "E-Commerce"] },
+        { id: 11, title: "Devfolio", url: "devfolio.dev", image: "https://source.unsplash.com/600x400/?developer,portfolio", category: "web", tags: ["Developer", "Portfolio"] },
+        { id: 12, title: "LogoCraft", url: "logocraft.io", image: "https://source.unsplash.com/600x400/?logo,branding", category: "branding", tags: ["Logo", "Branding"] },
+        { id: 13, title: "Wellness Clinic", url: "wellnessclinic.in", image: "https://source.unsplash.com/600x400/?clinic,website", category: "cms", tags: ["Clinic", "CMS"] },
+        { id: 14, title: "Gadget World", url: "gadgetworld.store", image: "https://source.unsplash.com/600x400/?gadgets,ecommerce", category: "ecommerce", tags: ["Gadgets", "Shop"] },
+        { id: 15, title: "Creative Studio", url: "creativestudio.io", image: "https://source.unsplash.com/600x400/?design,website", category: "web", tags: ["Design", "Web"] },
+        { id: 16, title: "BrandNova", url: "brandnova.co", image: "https://source.unsplash.com/600x400/?brand,identity", category: "branding", tags: ["Identity", "Brand"] }
+    ];
+
+    // FILTER
+    const filtered =
+        activeFilter === "all"
+            ? works
+            : works.filter((item) => item.category === activeFilter);
+
     const fadeUp = {
         hidden: { opacity: 0, y: 10 },
         show: {
@@ -112,6 +139,98 @@ export default function Work() {
                     <StatItem target={5} label="Countries" suffix="" />
                     <StatItem target={98} label="Client Satisfaction" suffix="%" />
                 </div></section>
+
+
+            {/* HEADER */}
+            <section className="section container-fluid section-alt py-3 py-sm-5">
+                <div className="container py-5 px-3 px-sm-0">
+                    <div className="text-center">
+                        <div className="d-flex justify-content-center mb-2">
+                            <motion.div
+                                className="section-tag"
+                                variants={fadeUp}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: true }}
+                            >
+                                portfolio
+                            </motion.div>
+                        </div>
+
+                        <motion.h2
+                            className="section-title"
+                            variants={fadeUp}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true }}
+                        >
+                            All Projects
+                        </motion.h2>
+                    </div>
+
+                    <div className="container py-4">
+                        {/* FILTER */}
+                        <div className="filter-tabs">
+                            <button className={`filter-btn ${activeFilter === "all" ? "active" : ""}`} onClick={() => setActiveFilter("all")}>
+                                All ({works.length})
+                            </button>
+                            <button className={`filter-btn ${activeFilter === "web" ? "active" : ""}`} onClick={() => setActiveFilter("web")}>
+                                Web Design
+                            </button>
+                            <button className={`filter-btn ${activeFilter === "cms" ? "active" : ""}`} onClick={() => setActiveFilter("cms")}>
+                                CMS / WordPress
+                            </button>
+                            <button className={`filter-btn ${activeFilter === "ecommerce" ? "active" : ""}`} onClick={() => setActiveFilter("ecommerce")}>
+                                E-Commerce
+                            </button>
+                            <button className={`filter-btn ${activeFilter === "branding" ? "active" : ""}`} onClick={() => setActiveFilter("branding")}>
+                                Branding
+                            </button>
+                        </div>
+
+                        {/* CARDS */}
+                        <div className="works-grid px-3 px-sm-0">
+                            {filtered.map(work => (
+                                <a
+                                    key={work.id}
+                                    href={`https://${work.url}`}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="text-decoration-none"
+                                >
+                                    <div key={work.id} className="work-card">
+
+                                        <div className="work-thumb">
+                                            <img src={work.image} alt={work.title} />
+                                            <div className="work-overlay">
+                                                <div className="work-overlay-text">View Project</div>
+                                            </div>
+                                        </div>
+
+                                        <div className="work-meta">
+                                            <h1 className="work-title mb-0">{work.title}</h1>
+
+
+                                            <div className='work-url'>
+                                                {work.url}
+                                            </div>
+
+
+                                            <div className="work-tags mt-2">
+                                                {work.tags.map((tag, i) => (
+                                                    <span key={i} className="work-tag">{tag}</span>
+                                                ))}
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+
+                </div>
+            </section>
 
 
             {/* CTA */}

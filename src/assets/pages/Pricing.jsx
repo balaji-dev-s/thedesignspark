@@ -142,7 +142,7 @@ export default function Pricing() {
                     <h2 className="mrkt-section-title">Enhance Your Package</h2>
                     <p className="section-sub">Add these services to any plan for a complete digital solution.</p>
                 </div>
-                <div class="addon-grid container px-3 pb-3 px-sm-0">
+                <div className="addon-grid container px-3 pb-3 px-sm-0">
                     <div className="addon-card"><div className="addon-icon">📱</div><div className="addon-title">Mobile App Development</div><p className="addon-desc">iOS & Android app for your business. Flutter or React Native.</p><div className="addon-price">Starting ₹80,000</div></div>
                     <div className="addon-card"><div className="addon-icon">🔍</div><div className="addon-title">SEO Package</div><p className="addon-desc">On-page, off-page, and technical SEO with monthly reporting.</p><div className="addon-price">₹10,000/month</div></div>
                     <div className="addon-card"><div className="addon-icon">📣</div><div className="addon-title">Social Media Management</div><p className="addon-desc">Content creation and posting across all major platforms.</p><div className="addon-price">₹10,000/month</div></div>
