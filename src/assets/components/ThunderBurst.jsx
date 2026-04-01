@@ -36,10 +36,10 @@ export default function ThunderBurst() {
             draw() {
                 ctx.save();
 
-                ctx.strokeStyle = "#469d4e";
+                ctx.strokeStyle = "#076CB0";
                 ctx.lineWidth = 2 + Math.random() * 2;
                 ctx.shadowBlur = 25;
-                ctx.shadowColor = "#00ffcc";
+                ctx.shadowColor = "#00e5ff";
 
                 ctx.beginPath();
                 ctx.moveTo(this.x, this.y);

@@ -14,7 +14,7 @@
     --glow: 0 0 40px rgba(0, 229, 255, 0.15);
     --radius: 10px;
     --radius-sm: 8px;
-    --primary-font: "Zalando Sans Expanded", sans-serif;
+    --primary-font: "Poppins", sans-serif;
     --secondary-font: "DM Sans", sans-serif;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .addon-title {
-    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: 1rem !important;
     font-weight: 600 !important;
     margin-bottom: 4px !important;
@@ -139,7 +139,7 @@
 }
 
 .price-tier {
-    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: .68rem !important;
     font-weight: 700 !important;
     letter-spacing: .12em !important;
@@ -149,7 +149,7 @@
 }
 
 .price-name {
-    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: 1.5rem !important;
     font-weight: 700 !important;
     margin-bottom: 22px !important;
@@ -179,7 +179,7 @@
 }
 
 .amount {
-    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: 2.8rem !important;
     font-weight: 800 !important;
     letter-spacing: -.05em !important;

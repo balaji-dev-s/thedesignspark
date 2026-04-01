@@ -14,7 +14,7 @@
     --glow: 0 0 40px rgba(0, 229, 255, 0.15);
     --radius: 10px;
     --radius-sm: 8px;
-    --primary-font: "Zalando Sans Expanded", sans-serif;
+    --primary-font: "Poppins", sans-serif;
     --secondary-font: "DM Sans", sans-serif;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .work-title {
-    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: .88rem !important;
     font-weight: 700 !important;
     color: #e8eaf2 !important;

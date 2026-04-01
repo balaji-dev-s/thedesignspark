@@ -11,23 +11,41 @@ export default function Home() {
         }
     };
 
+    const handleMove = (e) => {
+        const btn = e.currentTarget;
+        const rect = btn.getBoundingClientRect();
+
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+    };
+
+    const handleLeave = (e) => {
+        const btn = e.currentTarget;
+        btn.style.transform = `translate(0px, 0px)`;
+    };
+
     return (
         <section>
             {/* hero */}
-            <section className='grid-bg'>
+            <section className='grid-bg py-5 py-sm-4'>
                 <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}
-                    className="hero container justify-content-between d-flex flex-wrap py-5 px-3 px-sm-0">
+                    className="hero container justify-content-between align-items-center d-flex py-3 py-sm-5 flex-wrap px-3 px-sm-5">
                     <div className="hero-content">
                         <div className="hero-eyebrow"><span className="hero-eyebrow-dot"></span>Chennai-Based Digital Agency</div>
-                        <h1 className="hero-h1"><span className="h1-line1">We Build<br />Digital</span></h1>
+                        <h1 className="hero-h1"><span className="h1-line1">We Build Digital</span></h1>
+                        <h1 className="hero-h1"><span className="h1-line1">Digital</span></h1>
                         <p className="hero-sub">
                             <span>
-                                E-Commerce · Web Apps · Mobile Apps · Branding|CMS Websites · SEO · Digital Marketing|FoodBilling POS for Restaurants
+                                E-Commerce · Web Apps · Mobile Apps · Branding · CMS Websites · SEO · Digital Marketing · FoodBilling POS for Restaurants
                             </span>
                         </p>
                         <div className="hero-actions">
-                            <a href="/contact" className="btn-primary ">Start Your Project →</a>
-                            <a href="/our-work" className="btn-outline ">View Our Work</a>
+                            <a href="/contact" onMouseMove={handleMove}
+                                onMouseLeave={handleLeave} className="btn btn-primary service-btn">Start Your Project →</a>
+                            <a href="/our-work" onMouseMove={handleMove}
+                                onMouseLeave={handleLeave} className="btn btn-outline service-btn">View Our Work</a>
                         </div>
                     </div>
                     <div className="hero-visual">
@@ -80,7 +98,7 @@ export default function Home() {
                                             style={{
                                                 width: "95%",
                                                 background:
-                                                    "linear-gradient(90deg,var(--accent),var(--accent2))",
+                                                    "linear-gradient(90deg,var(--accent), #01e4ff)",
                                             }}
                                         ></div>
                                     </div>
@@ -97,7 +115,7 @@ export default function Home() {
                                             style={{
                                                 width: "88%",
                                                 background:
-                                                    "linear-gradient(90deg,var(--accent2),var(--gold))",
+                                                    "linear-gradient(90deg, #7d5dfb, #01e4ff)",
                                             }}
                                         ></div>
                                     </div>
@@ -114,7 +132,7 @@ export default function Home() {
                                             style={{
                                                 width: "92%",
                                                 background:
-                                                    "linear-gradient(90deg,var(--gold),var(--green))",
+                                                    "linear-gradient(90deg,var(--gold), #01e4ff)",
                                             }}
                                         ></div>
                                     </div>
@@ -127,41 +145,43 @@ export default function Home() {
             </section>
 
             {/* marquee-service */}
-            <div className="marquee-band">
-                <div className="marquee-outer">
-                    <div class="marquee-inner">
-                        <span className="marquee-item"><span className="mi-dot">✦</span> E-Commerce</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> Web Design</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> Mobile Apps</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> Branding & Identity</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> Digital Marketing</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> CMS Development</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> SEO Optimization</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> Graphic Design</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> FoodBilling POS</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> Chennai, India</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> E-Commerce</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> Web Design</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> Mobile Apps</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> Branding & Identity</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> Digital Marketing</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> CMS Development</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> SEO Optimization</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> Graphic Design</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> FoodBilling POS</span>
-                        <span className="marquee-item"><span className="mi-dot">✦</span> Chennai, India</span>
+            <section>
+                <div className="marquee-band">
+                    <div className="marquee-outer">
+                        <div className="marquee-inner">
+                            <span className="marquee-item"><span className="mi-dot">✦</span> E-Commerce</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> Web Design</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> Mobile Apps</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> Branding & Identity</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> Digital Marketing</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> CMS Development</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> SEO Optimization</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> Graphic Design</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> FoodBilling POS</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> Chennai, India</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> E-Commerce</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> Web Design</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> Mobile Apps</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> Branding & Identity</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> Digital Marketing</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> CMS Development</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> SEO Optimization</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> Graphic Design</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> FoodBilling POS</span>
+                            <span className="marquee-item"><span className="mi-dot">✦</span> Chennai, India</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             {/* stats band */}
             <section className="stats-section py-5 px-3 px-sm-0">
                 <div className='py-5'>
                     <div className="stats-inner fade-content container">
-                        <div className="stat-box"><span class="stat-num-val" data-count="50" data-suffix="+">50+</span><div class="stat-lbl">Completed Projects</div></div>
-                        <div className="stat-box"><span class="stat-num-val" data-count="40" data-suffix="+">40+</span><div class="stat-lbl">Happy Clients</div></div>
-                        <div className="stat-box"><span class="stat-num-val" data-count="10" data-suffix="+">10+</span><div class="stat-lbl">Years in Industry</div></div>
-                        <div className="stat-box"><span class="stat-num-val">98%</span><div class="stat-lbl">Client Satisfaction</div></div>
+                        <div className="stat-box"><span className="stat-num-val" data-count="50" data-suffix="+">50+</span><div className="stat-lbl">Completed Projects</div></div>
+                        <div className="stat-box"><span className="stat-num-val" data-count="40" data-suffix="+">40+</span><div className="stat-lbl">Happy Clients</div></div>
+                        <div className="stat-box"><span className="stat-num-val" data-count="10" data-suffix="+">10+</span><div className="stat-lbl">Years in Industry</div></div>
+                        <div className="stat-box"><span className="stat-num-val">98%</span><div className="stat-lbl">Client Satisfaction</div></div>
                     </div>
                 </div>
             </section>

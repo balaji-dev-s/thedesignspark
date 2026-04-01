@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../components/images/tdp-02.webp";
 
 export default function NavBar() {
     const handleClick = () => {
@@ -15,7 +16,7 @@ export default function NavBar() {
 
                 {/* logo */}
                 <NavLink className="navbar-brand logo text-white fw-bold" to="/" onClick={handleClick}>
-                    TheDesignSpark
+                    <img src={logo} alt={logo.png} className="logo" />
                 </NavLink>
 
                 {/* toggle */}

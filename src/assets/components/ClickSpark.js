@@ -81,7 +81,7 @@ export function initClickSpark(color = '#00e5ff', count = 12) {
 
     loop();
 
-    // ✅ CLEANUP (important in React)
+    //  CLEANUP
     return () => {
         document.removeEventListener('click', handleClick);
         document.body.removeChild(canvas);

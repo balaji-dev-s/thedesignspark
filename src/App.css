@@ -36,7 +36,7 @@
     --glow: 0 0 40px rgba(0, 229, 255, 0.15);
     --radius: 10px;
     --radius-sm: 8px;
-    --primary-font: "Zalando Sans Expanded", sans-serif;
+    --primary-font: "Poppins", sans-serif;
     --secondary-font: "DM Sans", sans-serif;
 }
 
@@ -90,7 +90,6 @@
 
 
 .hero {
-    min-height: 100vh !important;
     display: flex !important;
     align-items: center !important;
     position: relative !important;
@@ -131,13 +130,14 @@
 }
 
 h1.hero-h1 {
-    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: clamp(3rem, 6vw, 5.4rem) !important;
-    font-weight: 800 !important;
+    font-weight: 900 !important;
     line-height: 1.03 !important;
     letter-spacing: -.05em !important;
     margin-bottom: 10px !important;
     display: block !important;
+    color: #e8eaf2 !important;
 }
 
 .h1-line1 {
@@ -154,6 +154,7 @@ h1.hero-h1 {
     animation: fadeBlurIn .8s .6s both !important;
     min-height: 2em !important;
     margin-bottom: 40px !important;
+    font-family: var(--secondary-font);
 }
 
 .hero-actions {
@@ -222,7 +223,7 @@ h1.hero-h1 {
 }
 
 .hcs-val {
-    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: 1.6rem !important;
     font-weight: 700 !important;
     letter-spacing: -.04em !important;
@@ -234,6 +235,7 @@ h1.hero-h1 {
     text-transform: uppercase !important;
     letter-spacing: .07em !important;
     margin-top: 1px !important;
+    font-family: var(--secondary-font) !important;
 }
 
 .c-c {
@@ -269,6 +271,7 @@ h1.hero-h1 {
     justify-content: space-between !important;
     font-size: .66rem !important;
     color: var(--muted) !important;
+    font-family: var(--secondary-font) !important;
 }
 
 .prog-bar {
@@ -324,7 +327,7 @@ h1.hero-h1 {
 }
 
 .stat-num-val {
-    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: 2.8rem !important;
     font-weight: 800 !important;
     letter-spacing: -.06em !important;
@@ -356,14 +359,4 @@ h1.hero-h1 {
     .stat-box:nth-child(3) {
         border-right: 1px solid var(--border) !important;
     }
-}
-
-.hero-content {
-    flex: 1 1 50% !important;
-    min-width: 300px !important;
-}
-
-.hero-visual {
-    flex: 1 1 50% !important;
-    min-width: 300px !important;
 }

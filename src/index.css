@@ -1,5 +1,5 @@
 :root {
-  --primary-font: "Zalando Sans Expanded", sans-serif;
+  --primary-font: "Poppins", sans-serif
   --secondary-font: "DM Sans", sans-serif;
 }
 
@@ -11,9 +11,7 @@
 
 .grid-bg {
   width: 100%;
-  height: 90vh;
   background-color: #070911;
-
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.03) .7px, transparent .7px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) .7px, transparent .7px);
@@ -32,6 +30,10 @@
   font-size: 0.9rem !important;
   color: #7B83A1 !important;
   transition: all 0.15s;
+}
+
+.logo{
+  width: 200px !important;
 }
 
 .nav-link:hover {
@@ -62,7 +64,7 @@
   bottom: -4px;
   width: 0%;
   height: 2px;
-  background-color: #67E86C;
+  background-color: #FF6425;
   transition: width 0.3s ease;
 }
 
@@ -81,11 +83,11 @@
 @media (max-width: 991px) {
 
   .nav-link:hover {
-    color: #67E86C !important;
+    color: #FF6425 !important;
   }
 
   .navbar .nav-link.active {
-    color: #67E86C !important;
+    color: #FF6425 !important;
   }
 
   .navbar .nav-link::after {
@@ -102,38 +104,3 @@
   }
 }
 
-/* hero content */
-.hero-heading,
-.hero-heading-changing {
-  font-size: clamp(3rem, 6vw, 5.4rem) !important;
-  font-family: var(--primary-font);
-  font-weight: 800 !important;
-}
-
-.hero-heading {
-  margin-bottom: 0%;
-}
-
-.start-your-project-btn {
-  background: linear-gradient(90deg, #00e5ff, #4cff9a) !important;
-  padding: 13px 26px !important;
-  font-weight: 500 !important;
-  font-family: var(--secondary-font);
-}
-
-.view-our-work-btn {
-  background: transparent !important;
-  border-color: #7B83A1 !important;
-  border-width: .5px !important;
-  border-style: solid !important;
-  padding: 13px 26px !important;
-  font-weight: 500 !important;
-  font-family: var(--secondary-font);
-}
-
-.hero-eyebrow-dot {
-  width: 6px !important;
-  height: 6px !important;
-  background: #67E86C !important;
-  border-radius: 50% !important;
-}

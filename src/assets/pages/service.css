@@ -13,7 +13,7 @@ body {
     --bg: #060810;
     --bg2: #0b0f1c;
     --bg3: #111629;
-    --accent: #4cff9a;
+    --accent: #4cff55;
     --accent2: #7c5cfc;
     --gold: #f5c842;
     --green: #4cff9a;
@@ -25,7 +25,7 @@ body {
     --glow: 0 0 40px rgba(0, 229, 255, 0.15);
     --radius: 10px;
     --radius-sm: 8px;
-    --primary-font: "Zalando Sans Expanded", sans-serif;
+    --primary-font: "Poppins", sans-serif;
     --secondary-font: "DM Sans", sans-serif;
 }
 
@@ -51,11 +51,11 @@ body {
 }
 
 .svc-num {
-    font-family: 'Zalando Sans Expanded', sans-serif;
+    font-family: "Poppins", sans-serif !important;
     font-size: 5rem;
     font-weight: 800;
     letter-spacing: -.08em;
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    background: linear-gradient(135deg, #076CB0, #076CB0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -65,7 +65,7 @@ body {
 }
 
 .svc-big-title {
-    font-family: 'Zalando Sans Expanded', sans-serif;
+    font-family: "Poppins", sans-serif !important;
     font-size: clamp(1.8rem, 3.5vw, 2.5rem);
     font-weight: 700;
     letter-spacing: -.04em;
@@ -151,7 +151,7 @@ body {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Zalando Sans Expanded', sans-serif;
+    font-family: "Poppins", sans-serif !important;
     font-size: .75rem;
     font-weight: 600;
     letter-spacing: .08em;
@@ -173,7 +173,7 @@ body {
 }
 
 .mkt-title {
-    font-family: 'Zalando Sans Expanded', sans-serif;
+    font-family: "Poppins", sans-serif !important;
     font-size: .95rem;
     font-weight: 600;
     margin-bottom: 8px;
@@ -210,7 +210,7 @@ body {
     font-size: .7rem !important;
     letter-spacing: .12em;
     text-transform: uppercase;
-    color: var(--accent) !important;
+    color: #06E7F6 !important;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -223,7 +223,7 @@ body {
     display: block;
     width: 24px;
     height: 1px;
-    background: var(--accent) !important;
+    background: #06E7F6 !important;
 }
 
 .grid-section-bg {
@@ -241,7 +241,7 @@ body {
 }
 
 .section-title {
-    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: clamp(3rem, 4vw, 5rem) !important;
     font-weight: 700 !important;
     letter-spacing: -.04em !important;
@@ -273,11 +273,11 @@ body {
 }
 
 .service-sub-tag {
-    color: #48FD9E !important;
+    color: #A8C507 !important;
 }
 
 .home-sub-tag:hover {
-    color: #4cff9a !important;
+    color: #A8C507 !important;
 }
 
 .page-sub {
@@ -306,7 +306,7 @@ body {
 }
 
 .mrkt-section-title {
-    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: clamp(2.5rem, 4vw, 4.5rem) !important;
     font-weight: 700 !important;
     letter-spacing: -.04em !important;
@@ -360,7 +360,7 @@ body {
 }
 
 .cta-service-title {
-    font-family: 'Zalando Sans Expanded', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: clamp(2rem, 4vw, 4rem) !important;
     font-weight: 700 !important;
     letter-spacing: -.04em !important;

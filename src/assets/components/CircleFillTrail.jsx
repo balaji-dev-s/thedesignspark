@@ -86,8 +86,8 @@ export default function CircleFillTrail() {
                     b.x, b.y, b.size * 2
                 );
 
-                gradient.addColorStop(0, "#469d4e");
-                gradient.addColorStop(0.5, "#00ff91");
+                gradient.addColorStop(0, "#FF6425");
+                gradient.addColorStop(0.5, "#cf6034");
                 gradient.addColorStop(1, "transparent");
 
                 ctx.fillStyle = gradient;
