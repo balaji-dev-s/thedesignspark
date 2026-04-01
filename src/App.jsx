@@ -16,7 +16,7 @@ import Pricing from "./assets/pages/Pricing";
 import Contact from "./assets/pages/Contact";
 import Home from './assets/pages/Home';
 // import CursorTrail from './assets/components/CursorTrail.jsx';
-import ThunderBurst from './assets/components/ThunderBurst.jsx';
+// import ThunderBurst from './assets/components/ThunderBurst.jsx';
 import CircleFillTrail from './assets/components/CircleFillTrail.jsx';
 
 export default function App() {
@@ -38,7 +38,7 @@ export default function App() {
     <>
       {/* <CursorTrail /> */}
       <CircleFillTrail />
-      <ThunderBurst />
+      {/* <ThunderBurst /> */}
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../components/images/tdp-02.webp";
+import logo from "../components/images/logo.png";
 
 export default function NavBar() {
     const handleClick = () => {

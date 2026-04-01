@@ -22,27 +22,6 @@
     --secondary-font: "DM Sans", sans-serif;
 }
 
-
-.section-tag {
-    font-size: .7rem !important;
-    letter-spacing: .12em !important;
-    text-transform: uppercase !important;
-    color: #076CB0 !important;
-    font-weight: 500 !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 10px;
-    margin-bottom: 14px;
-}
-
-.section-tag::before {
-    content: '';
-    display: block;
-    width: 24px;
-    height: 1px;
-    background: #076CB0 !important;
-}
-
 .blob-wrap {
     position: relative;
 }
@@ -82,16 +61,16 @@
 }
 
 .blob-inner p {
-    font-size: .82rem;
-    color: var(--muted);
-    line-height: 1.6px;
+    font-size: .82rem !important;
+    color: var(--muted) !important;
+    line-height: 1.6px !important;
 }
 
 .cb-val {
     font-family: "Poppins", sans-serif !important;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--accent)
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    color: #FF6425 !important;
 }
 
 .cb-lbl {
@@ -159,15 +138,16 @@
 }
 
 .step-num {
+    display: block !important;
     font-family: "Poppins", sans-serif !important;
-    font-size: 2.8rem;
-    font-weight: 800;
-    letter-spacing: -.05em;
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 12px
+    font-size: 2.8rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -.05em !important;
+    background: linear-gradient(135deg, #abc405, #00e5ff) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    margin-bottom: 12px !important;
 }
 
 .step-title {
@@ -213,7 +193,7 @@
     border-radius: 100px !important;
     font-size: .78rem !important;
     transition: all .15s !important;
-    border-color: rgba(0, 255, 115, 0.3) !important;
+    border-color: rgba(161, 252, 4, 0.414) !important;
     color: var(--text) !important;
     background: rgba(0, 229, 255, .04) !important;
 }
@@ -221,8 +201,8 @@
 .tech-pill:hover {
     cursor: default;
     border: 1px solid var(--border) !important;
-    color: var(--muted) !important;
-    background: rgba(255, 255, 255, .03) !important;
+    color: black !important;
+     background: linear-gradient(135deg, #00e5ff, #abc405) !important;
 }
 
 .stat-num {
@@ -230,10 +210,10 @@
     font-size: 2.6rem;
     font-weight: 800;
     letter-spacing: -.05em;
-    background: linear-gradient(135deg, #4cff9a, #7c5cfc);
+    background: linear-gradient(135deg, #00e5ff, #abc405) !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background-clip: text !important;
 }
 
 .stats-band {

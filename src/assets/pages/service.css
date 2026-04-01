@@ -55,10 +55,7 @@ body {
     font-size: 5rem;
     font-weight: 800;
     letter-spacing: -.08em;
-    background: linear-gradient(135deg, #076CB0, #076CB0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #d9ff00 !important;
     opacity: .25;
     margin-bottom: -20px;
     line-height: 1;
@@ -100,7 +97,7 @@ body {
 
 .svc-features li::before {
     content: '✓';
-    color: var(--accent);
+    color: #d9ff00;
     font-weight: 700;
     flex-shrink: 0
 }
@@ -210,7 +207,7 @@ body {
     font-size: .7rem !important;
     letter-spacing: .12em;
     text-transform: uppercase;
-    color: #06E7F6 !important;
+    color: #d9ff00 !important;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -223,7 +220,7 @@ body {
     display: block;
     width: 24px;
     height: 1px;
-    background: #06E7F6 !important;
+    background: #d9ff00 !important;
 }
 
 .grid-section-bg {
@@ -258,7 +255,7 @@ body {
 }
 
 .text-gradient {
-    background: linear-gradient(90deg, #00e5ff, #4cff9a);
+    background: linear-gradient(90deg, #00e5ff, #abc405);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -273,11 +270,11 @@ body {
 }
 
 .service-sub-tag {
-    color: #A8C507 !important;
+    color: #d9ff00 !important;
 }
 
 .home-sub-tag:hover {
-    color: #A8C507 !important;
+    color: #FF6425 !important;
 }
 
 .page-sub {
@@ -293,12 +290,16 @@ body {
 }
 
 .service-btn {
-    background: linear-gradient(90deg, #00e5ff, #4cff9a) !important;
+    background: linear-gradient(90deg, #d1ff00, #abc405) !important;
     padding: 13px 26px !important;
     color: #070911 !important;
     box-shadow: 0 8px 25px rgba(76, 255, 154, 0.2),
         0 0 40px rgba(76, 255, 154, 0.1);
     font-family: var(--secondary-font) !important;
+}
+
+.service-btn:hover{
+    background: linear-gradient(90deg, #FF6425, #d96435) !important;
 }
 
 .market-section-bg {

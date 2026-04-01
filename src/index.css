@@ -1,6 +1,5 @@
 :root {
-  --primary-font: "Poppins", sans-serif
-  --secondary-font: "DM Sans", sans-serif;
+  --primary-font: "Poppins", sans-serif --secondary-font: "DM Sans", sans-serif;
 }
 
 * {
@@ -32,7 +31,7 @@
   transition: all 0.15s;
 }
 
-.logo{
+.logo {
   width: 200px !important;
 }
 
@@ -43,13 +42,14 @@
 .get-a-quote {
   font-family: var(--secondary-font) !important;
   font-size: 0.9rem !important;
-  background: linear-gradient(90deg, #00e5ff, #4cff9a) !important;
+  background: linear-gradient(90deg, #f1ff00, #abc405) !important;
   color: #070911 !important;
   transition: all 0.15s !important;
 }
 
 .get-a-quote:hover {
   opacity: .8 !important;
+  background: linear-gradient(90deg, #FF6425, #d96435) !important;
 }
 
 .navbar .nav-link {
@@ -103,4 +103,3 @@
     padding: .2rem 0 !important;
   }
 }
-
