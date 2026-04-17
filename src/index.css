@@ -8,12 +8,23 @@
   box-sizing: border-box !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  cursor: default !important;
+}
+
 .grid-bg {
   width: 100%;
-  background-color: #070911;
+  background-color: #101424;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) .7px, transparent .7px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) .7px, transparent .7px);
+    linear-gradient(rgba(255, 255, 255, 0.05) .7px, transparent .7px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) .7px, transparent .7px);
   padding-bottom: 80px !important;
   background-size: 60px 60px;
 }

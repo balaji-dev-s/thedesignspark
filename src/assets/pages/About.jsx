@@ -92,7 +92,7 @@ export default function About() {
                                 whileInView="show"
                                 viewport={{ once: true }}
                             >
-                                Where Dreams MeetDigital Reality
+                                Crafting Quality Print Experiences
                             </motion.h1>
                         </div>
                         <div className="d-flex justify-content-center">
@@ -101,7 +101,7 @@ export default function About() {
                                 initial="hidden"
                                 whileInView="show"
                                 viewport={{ once: true }}>
-                                A team of passionate technologists, designers, and marketers based in Chennai, India - turning your vision into powerful digital products                            </motion.h6></div>
+                                A team of dedicated print specialists and designers based in Chennai, India - turning your ideas into high-quality print solutions.                           </motion.h6></div>
                     </div>
                 </div>
             </section>
@@ -118,10 +118,10 @@ export default function About() {
 
                                 <div className="about-blob p-4">
                                     <div className="blob-inner">
-                                        <div className="blob-icon mb-2">🧠</div>
-                                        <h3>Technology Disruptor</h3>
+                                        <div className="blob-icon mb-2">&#128424;</div>
+                                        <h3>Printing Solutions Provider</h3>
                                         <p className="svc-big-desc">
-                                            Custom development & design experience based in Chennai, India
+                                            Custom printing & design experience based in Chennai, India.
                                         </p>
                                     </div>
                                 </div>
@@ -132,7 +132,7 @@ export default function About() {
                                 </div>
 
                                 <div className="corner-badge cb2 position-absolute bottom-0 end-0 m-3">
-                                    <div className="cb-val cb-1 fw-bold">2016</div>
+                                    <div className="cb-val cb-1 fw-bold">2000</div>
                                     <div className="cb-lbl cb-2 small">Year Founded</div>
                                 </div>
 
@@ -148,20 +148,19 @@ export default function About() {
                                 </div>
 
                                 <h2 className="section-title mb-3">
-                                    Built on Belief,<br />Driven by Innovation
+                                    Where Every Print,<br />Speaks Quality
                                 </h2>
 
                                 <p className="svc-big-desc">
-                                    The Design Saprk is a technology disruptor in custom development and design experience, based in Chennai, India. We deliver high-quality work while leveraging the newest and best techniques available in the market.
+                                    The Designs Park is a trusted retailer based in Chennai, Tamil Nadu, specializing in high-quality printing services, BOPP tape, and stretch film rolls. We are committed to delivering products that meet the diverse needs of businesses and individuals.
                                 </p>
 
                                 <p className="svc-big-desc">
-                                    We've created a process and methodology that combines the aspects of analysis, research, creativity, technology, and branding together. Each project at Dream Infomatrix begins with a belief that the human factor can change the growth of our clients' businesses.
+                                    Our printing services are designed to provide vibrant, durable, and cost-effective solutions for branding and packaging. With a focus on quality and timely delivery, we ensure that every product we supply adds value to our customers.
                                 </p>
 
                                 <p className="svc-big-desc mb-4">
-                                    We believe branding is more about human emotion than just selling. We assist you in attaining the human factor with our knowledge of the latest technologies.
-                                </p>
+                                    Backed by a customer-centric approach, we strive to build lasting relationships through reliability and excellence. At The Designs Park, innovation and service are at the heart of everything we do.                                </p>
 
                                 <a href="/contact" onMouseMove={handleMove}
                                     onMouseLeave={handleLeave} className="btn btn-primary service-btn">
@@ -178,9 +177,9 @@ export default function About() {
             {/* Stats Band */}
             <section className="section stats-band about-story-bg">
                 <div className="container d-flex justify-content-between flex-wrap">
-                    <StatItem target={50} label="Completed Projects" suffix="+" />
-                    <StatItem target={40} label="Happy Clients" suffix="+" />
-                    <StatItem target={8} label="Years in Industry" suffix="+" />
+                    <StatItem target={500} label="Completed Projects" suffix="+" />
+                    <StatItem target={50} label="Happy Clients" suffix="+" />
+                    <StatItem target={26} label="Years in Industry" suffix="+" />
                     <StatItem target={98} label="Client Satisfaction" suffix="%" />
                 </div></section>
 
@@ -221,8 +220,8 @@ export default function About() {
                         <motion.div className="flex-33 p-2" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0 }}>
                             <div className="value-card p-4 h-100">
                                 <div className="value-icon fs-2 mb-2">💡</div>
-                                <div className="mkt-title fw-bold mb-2">Innovation First</div>
-                                <p className="section-sub">We constantly explore cutting-edge technologies and methodologies to bring fresh solutions to every project.</p>
+                                <div className="mkt-title fw-bold mb-2">Innovation in Print</div>
+                                <p className="section-sub">We adopt modern printing techniques and materials to deliver fresh, high-quality results for every project.</p>
                             </div>
                         </motion.div>
 
@@ -231,7 +230,7 @@ export default function About() {
                             <div className="value-card p-4 h-100">
                                 <div className="value-icon fs-2 mb-2">🤝</div>
                                 <div className="mkt-title fw-bold mb-2">Client Partnership</div>
-                                <p className="section-sub">We treat every client as a partner, building long-lasting relationships built on trust, transparency, and results.</p>
+                                <p className="section-sub">We work closely with every client, building lasting relationships based on trust, transparency, and consistent results.</p>
                             </div>
                         </motion.div>
 
@@ -239,8 +238,8 @@ export default function About() {
                         <motion.div className="flex-33 p-2" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.2 }}>
                             <div className="value-card p-4 h-100">
                                 <div className="value-icon fs-2 mb-2">🎯</div>
-                                <div className="mkt-title fw-bold mb-2">Quality Obsessed</div>
-                                <p className="section-sub">Every pixel, every line of code, every campaign is crafted with meticulous attention to detail and quality.</p>
+                                <div className="mkt-title fw-bold mb-2">Quality Focused</div>
+                                <p className="section-sub">Every detail from design to final print is handled with precision and a commitment to excellence.</p>
                             </div>
                         </motion.div>
 
@@ -249,16 +248,16 @@ export default function About() {
                             <div className="value-card p-4 h-100">
                                 <div className="value-icon fs-2 mb-2">🚀</div>
                                 <div className="mkt-title fw-bold mb-2">On-Time Delivery</div>
-                                <p className="section-sub">We respect your timeline. Our streamlined process ensures projects are delivered on schedule, every time.</p>
+                                <p className="section-sub">We value your deadlines. Our efficient process ensures every print job is delivered on time, every time.</p>
                             </div>
                         </motion.div>
 
                         {/* CARD 5 */}
                         <motion.div className="flex-33 p-2" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.4 }}>
                             <div className="value-card p-4 h-100">
-                                <div className="value-icon fs-2 mb-2">❤️</div>
-                                <div className="mkt-title fw-bold mb-2">Human-Centered</div>
-                                <p className="section-sub">We believe branding is about emotion and connection -     every solution is designed with real people in mind.</p>
+                                <div className="value-icon fs-2 mb-2">&#x1F464;</div>
+                                <div className="mkt-title fw-bold mb-2">Customer-Centric Approach</div>
+                                <p className="section-sub">We understand that great printing connects with people, every product is crafted with your audience in mind.</p>
                             </div>
                         </motion.div>
 
@@ -266,8 +265,8 @@ export default function About() {
                         <motion.div className="flex-33 p-2" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.5 }}>
                             <div className="value-card p-4 h-100">
                                 <div className="value-icon fs-2 mb-2">📈</div>
-                                <div className="mkt-title fw-bold mb-2">Growth Mindset</div>
-                                <p className="section-sub">We grow with our clients - our solutions scale as your business evolves, never leaving you behind.</p>
+                                <div className="mkt-title fw-bold mb-2">Scalable Solutions</div>
+                                <p className="section-sub">As your business grows, our printing solutions evolve with you from small runs to large-scale production.</p>
                             </div>
                         </motion.div>
 
@@ -318,8 +317,8 @@ export default function About() {
                         <motion.div className="flex-25 position-relative step-divider" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
                             <div className="process-step p-1 p-sm-4 h-100">
                                 <div className="step-num mb-2">01</div>
-                                <div className="step-title mb-2">Discover & Analyse</div>
-                                <p className="page-sub small">We dive deep into your business, goals, competitors, and target audience to shape a clear digital strategy.</p>
+                                <div className="step-title mb-2">Consult & Plan</div>
+                                <p className="page-sub small">We understand your requirements, brand, and objectives to define the right printing approach and materials.</p>
                             </div>
                         </motion.div>
 
@@ -327,8 +326,8 @@ export default function About() {
                         <motion.div className="flex-25 position-relative step-divider" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.1 }}>
                             <div className="process-step p-1 p-sm-4 h-100">
                                 <div className="step-num mb-2">02</div>
-                                <div className="step-title mb-2">Design & Prototype</div>
-                                <p className="page-sub small">Our designers craft wireframes and high-fidelity prototypes that balance aesthetics with user experience.</p>
+                                <div className="step-title mb-2">Design & Proof</div>
+                                <p className="page-sub small">Our team prepares precise designs and print-ready proofs, ensuring accuracy in layout, colors, and details.</p>
                             </div>
                         </motion.div>
 
@@ -336,8 +335,8 @@ export default function About() {
                         <motion.div className="flex-25 position-relative step-divider" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.2 }}>
                             <div className="process-step p-1 p-sm-4 h-100">
                                 <div className="step-num mb-2">03</div>
-                                <div className="step-title mb-2">Develop & Test</div>
-                                <p className="page-sub small">Our engineers build with best-in-class technologies, rigorously tested across all devices and browsers.</p>
+                                <div className="step-title mb-2">Print & Finish</div>
+                                <p className="page-sub small">Using advanced printing techniques, we produce high-quality outputs with perfect finishing and attention to detail.</p>
                             </div>
                         </motion.div>
 
@@ -345,8 +344,8 @@ export default function About() {
                         <motion.div className="flex-25 position-relative" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.3 }}>
                             <div className="process-step p-1 p-sm-4 h-100">
                                 <div className="step-num mb-2">04</div>
-                                <div className="step-title mb-2">Launch & Grow</div>
-                                <p className="page-sub small">We deploy, monitor, and continue to support your digital product as your business scales and evolves.</p>
+                                <div className="step-title mb-2">Deliver & Support</div>
+                                <p className="page-sub small">We ensure timely delivery and provide ongoing support for all your future printing and branding needs.</p>
                             </div>
                         </motion.div>
 
@@ -376,7 +375,7 @@ export default function About() {
                             whileInView="show"
                             viewport={{ once: true }}
                         >
-                            Our Tech Stack
+                            Our Capabilities
                         </motion.h2>
 
                         <motion.p
@@ -386,27 +385,29 @@ export default function About() {
                             whileInView="show"
                             viewport={{ once: true }}
                         >
-                            We work with the best tools in the industry to build robust, scalable digital products.
+                            We use advanced tools, premium materials, and modern printing techniques to deliver consistent, high-quality results.
                         </motion.p>
                     </div>
 
                     <div className="tech-grid">
-                        <div className="tech-pill">WordPress</div>
-                        <div className="tech-pill">WooCommerce</div>
-                        <div className="tech-pill">Elementor Pro</div>
-                        <div className="tech-pill">Crocoblock</div>
-                        <div className="tech-pill">React.js</div>
-                        <div className="tech-pill">Node.js</div>
-                        <div className="tech-pill">PHP / Laravel</div>
-                        <div className="tech-pill">MySQL</div>
-                        <div className="tech-pill">Flutter</div>
-                        <div className="tech-pill">React Native</div>
-                        <div className="tech-pill">Adobe XD</div>
-                        <div className="tech-pill">Figma</div>
                         <div className="tech-pill">Adobe Photoshop</div>
-                        <div className="tech-pill">Google Ads</div>
-                        <div className="tech-pill">Meta Ads</div>
-                        <div className="tech-pill">SEO Tools</div>
+                        <div className="tech-pill">Adobe Illustrator</div>
+                        <div className="tech-pill">CorelDRAW</div>
+
+                        <div className="tech-pill">Offset Printing</div>
+                        <div className="tech-pill">Digital Printing</div>
+                        <div className="tech-pill">Large Format Printing</div>
+                        <div className="tech-pill">UV Printing</div>
+
+                        <div className="tech-pill">Brochures & Flyers</div>
+                        <div className="tech-pill">Business Cards</div>
+                        <div className="tech-pill">Banners & Hoardings</div>
+                        <div className="tech-pill">Packaging & Labels</div>
+
+                        <div className="tech-pill">Vinyl & Flex Printing</div>
+                        <div className="tech-pill">Lamination (Matte/Gloss)</div>
+                        <div className="tech-pill">Die Cutting</div>
+                        <div className="tech-pill">Binding & Finishing</div>
                     </div>
                 </div>
             </section>
@@ -416,9 +417,9 @@ export default function About() {
             <div className="container-fluid cta-service-bg py-5 text-center cta-strip">
                 <div className="container px-3 py-5 px-sm-0">
                     <h2 className="cta-service-title">
-                        Let's Build Your <span className="text-gradient">Dream Project</span>
+                        Let’s Bring Your <span className="text-gradient">Print Ideas to Life</span>
                     </h2>
-                    <p className="mt-3 fs-6 cta-service-desc">We're excited to hear about your next project. Let's talk!</p>
+                    <p className="mt-3 fs-6 cta-service-desc">We’re here to turn your ideas into high-quality print. Let’s talk!</p>
 
                     <div className="d-flex justify-content-center gap-3 mt-4 flex-wrap">
                         <a href="/Contact" onMouseMove={handleMove}
