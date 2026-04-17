@@ -63,7 +63,7 @@
 .blob-inner p {
     font-size: .82rem !important;
     color: var(--muted) !important;
-    line-height: 1.6px !important;
+    line-height: 18px !important;
 }
 
 .cb-val {

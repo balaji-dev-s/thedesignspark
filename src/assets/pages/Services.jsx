@@ -43,7 +43,7 @@ export default function Services() {
                                 whileInView="show"
                                 viewport={{ once: true }}
                             >
-                                Services Focused on Results
+                                Results-Driven Printing Services
                             </motion.h1>
                         </div>
                         <div className="d-flex justify-content-center">
@@ -52,8 +52,7 @@ export default function Services() {
                                 initial="hidden"
                                 whileInView="show"
                                 viewport={{ once: true }}>
-                                End-to-end digital solutions - from design to development to marketing - crafted to grow your business in the digital age.
-                            </motion.h6></div>
+                                End-to-end printing solutions from design to final production, crafted to elevate your brand with high-quality print materials.                            </motion.h6></div>
                     </div>
                 </div>
             </section>
@@ -62,215 +61,132 @@ export default function Services() {
             <section className="container-fluid section-service-bg py-5 px-3 px-sm-0">
 
                 {/* 01 */}
-                <motion.div className="container service-block"
+                <motion.div className="container service-block mt-5 mb-5"
                     variants={fadeUp}
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}>
                     <div className="svc-text">
                         <div className="svc-num">01</div>
-                        <div className="section-tag">E-Commerce Development</div>
-                        <h2 className="svc-big-title">Online Stores That Convert Visitors to Customers</h2>
+                        <div className="section-tag">Printing Services</div>
+                        <h2 className="svc-big-title">High-Quality Prints That Elevate Your Brand</h2>
                         <p className="svc-big-desc">
-                            Our E-commerce service includes not only building an online shop but also creating your entire digital infrastructure, frontend and backend. Our team will assist your business scale up with your online business.
+                            Our printing services go beyond just production, we deliver complete print solutions from design to final output.
+                            Whether you need marketing materials or large-format prints, we ensure precision, quality, and timely delivery for every project.
                         </p>
-                        <ul className="svc-features">
-                            <li>WooCommerce & Custom E-commerce Platforms</li>
-                            <li>Payment Gateway Integration (Razorpay, Paytm, Stripe)</li>
-                            <li>Product & Inventory Management</li>
-                            <li>Mobile-Optimized Shopping Experience</li>
-                            <li>Order Tracking & Customer Dashboard</li>
-                            <li>SEO-Ready Product Pages</li>
+                        <ul className="tech-grid list-unstyled d-flex flex-wrap">
+                            <li className="tech-pill">Question Paper Printing</li>
+                            <li className="tech-pill">Prescription Pad Printing</li>
+                            <li className="tech-pill">Umbrella Printing</li>
+                            <li className="tech-pill">Canopy Printing</li>
+                            <li className="tech-pill">Tag Printing</li>
+                            <li className="tech-pill">Pen Printing</li>
+
+                            <li className="tech-pill">Pamphlet Printing</li>
+                            <li className="tech-pill">Poster Printing</li>
+                            <li className="tech-pill">Bill Book Printing</li>
+                            <li className="tech-pill">Diary Printing</li>
+                            <li className="tech-pill">Envelope Printing</li>
+                            <li className="tech-pill">Digital Banner Printing</li>
+                            <li className="tech-pill">Keychain Printing</li>
+
+                            <li className="tech-pill">Flex Printing</li>
+                            <li className="tech-pill">Sticker Printing</li>
+                            <li className="tech-pill">Label Printing</li>
+                            <li className="tech-pill">Menu Card Printing</li>
+                            <li className="tech-pill">Notepad Printing</li>
+                            <li className="tech-pill">Calendar Printing</li>
+                            <li className="tech-pill">Promotional Table Printing</li>
+                            <li className="tech-pill">Folder Printing</li>
+
+                            <li className="tech-pill">Magazine Printing</li>
+                            <li className="tech-pill">Printing Materials</li>
+                            <li className="tech-pill">Brochure Printing</li>
+                            <li className="tech-pill">Catalog Printing</li>
+                            <li className="tech-pill">Coupons Printing</li>
+                            <li className="tech-pill">Visiting Cards Printing</li>
+                            <li className="tech-pill">Display Boards Printing</li>
+                            <li className="tech-pill">Leaflet Printing</li>
+
+                            <li className="tech-pill">ID Card Printing</li>
+                            <li className="tech-pill">Letter Pad Printing</li>
+                            <li className="tech-pill">Digital Poster Printing</li>
+                            <li className="tech-pill">Standees Printing</li>
+                            <li className="tech-pill">Black & White Bill Book Printing</li>
+                            <li className="tech-pill">File Printing</li>
+                            <li className="tech-pill">Text Book Printing</li>
+                            <li className="tech-pill">Invoice Printing</li>
+                            <li className="tech-pill">Dangle Printing</li>
                         </ul>
                         <a href="/Contact" onMouseMove={handleMove}
-                            onMouseLeave={handleLeave} className="btn btn-primary service-btn mt-3">Discuss Your Store →</a>
+                            onMouseLeave={handleLeave} className="btn btn-primary service-btn mt-3">Start Your Print Project →</a>
                     </div>
 
                     <div className="svc-visual">
-                        <div className="svc-visual-icon">🛒</div>
-                        <div className="svc-visual-label">E-Commerce Solutions</div>
+                        <div className="svc-visual-icon">&#128424;</div>
+                        <div className="svc-visual-label">printing Service</div>
                     </div>
                 </motion.div>
 
                 {/* 02 */}
-                <motion.div className="container service-block reverse"
+                <motion.div className="container service-block reverse mt-5 mb-5"
                     variants={fadeUp}
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}>
                     <div className="svc-text">
                         <div className="svc-num">02</div>
-                        <div className="section-tag">Web Application</div>
-                        <h2 className="svc-big-title">Custom Web Apps Built to Scale</h2>
+                        <div className="section-tag">Graphic Design Services</div>
+                        <h2 className="svc-big-title">Creative Designs That Define Your Brand</h2>
                         <p className="svc-big-desc">
-                            TheDesignSpark provides web application development services for companies looking to create and improve web-based software products and solutions with innovative features and attractive appearance.
-                        </p>
-                        <ul className="svc-features">
-                            <li>Custom Business Logic & Workflows</li>
-                            <li>Admin Dashboards & Analytics Panels</li>
-                            <li>API Development & Integrations</li>
-                            <li>Database Design & Optimization</li>
-                            <li>Cloud Hosting & Deployment</li>
-                            <li>Maintenance & Support</li>
+                            Our graphic design services go beyond visuals, we create impactful designs that communicate your brand message effectively. From branding to marketing materials, we ensure every design is crafted with creativity, consistency, and attention to detail.                        </p>
+                        <ul className="tech-grid list-unstyled d-flex flex-wrap">
+                            <li className="tech-pill">Logo Design</li>
+                            <li className="tech-pill">Brand Identity</li>
+                            <li className="tech-pill">Brochure Design</li>
+                            <li className="tech-pill">Catalog Design</li>
+                            <li className="tech-pill">Poster Design</li>
+                            <li className="tech-pill">Banner Design</li>
+                            <li className="tech-pill">Social Media Creatives</li>
+                            <li className="tech-pill">Advertisement Design</li>
+                            <li className="tech-pill">Packaging Design</li>
+                            <li className="tech-pill">Label Design</li>
+                            <li className="tech-pill">Business Card Design</li>
+                            <li className="tech-pill">Stationery Design</li>
+                            <li className="tech-pill">Menu Card Design</li>
                         </ul>
                         <a href="/Contact" onMouseMove={handleMove}
-                            onMouseLeave={handleLeave} className="btn btn-primary mt-3 service-btn">Start Building →</a>
+                            onMouseLeave={handleLeave} className="btn btn-primary mt-3 service-btn">Build Your Brand →</a>
                     </div>
 
                     <div className="svc-visual">
-                        <div className="svc-visual-icon">⚙️</div>
-                        <div className="svc-visual-label">Web Application Development</div>
+                        <div className="svc-visual-icon">&#127912;</div>
+                        <div className="svc-visual-label">Graphic Design</div>
                     </div>
                 </motion.div>
 
                 {/* 03 */}
-                <motion.div className="container service-block"
+                <motion.div className="container service-block mt-5 mb-5"
                     variants={fadeUp}
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}>
                     <div className="svc-text">
                         <div className="svc-num">03</div>
-                        <div className="section-tag">Mobile Application</div>
-                        <h2 className="svc-big-title">Stellar Mobile Experiences for iOS & Android</h2>
+                        <div className="section-tag">Inserting Service</div>
+                        <h2 className="svc-big-title">Reliable, Easy-to-Execute Inserting Services</h2>
                         <p className="svc-big-desc">
-                            We assist brands across the globe to design, build, and maintain stellar digital products, enabling seamless user experiences across all modern platforms and devices.
-                        </p>
-                        <ul className="svc-features">
-                            <li>iOS (Swift) & Android (Kotlin)</li>
-                            <li>Flutter / React Native</li>
-                            <li>UI/UX Design</li>
-                            <li>App Store Optimization</li>
-                            <li>Push Notifications</li>
-                            <li>App Deployment</li>
-                        </ul>
+                            Delivering professional Newspaper Inserting Services with precise execution, wide coverage, and guaranteed timely delivery for your marketing needs.                        </p>
                         <a href="/Contact" onMouseMove={handleMove}
-                            onMouseLeave={handleLeave} className="btn btn-primary mt-3 service-btn">Build Your App →</a>
+                            onMouseLeave={handleLeave} className="btn btn-primary mt-3 service-btn">Book Service →</a>
                     </div>
 
                     <div className="svc-visual">
-                        <div className="svc-visual-icon">📱</div>
-                        <div className="svc-visual-label">Mobile App Development</div>
+                        <div className="svc-visual-icon">&#128240;</div>
+                        <div className="svc-visual-label">Newspaper Inserting Service</div>
                     </div>
                 </motion.div>
 
-                {/* 04 */}
-                <motion.div className="container service-block reverse"
-                    variants={fadeUp}
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: true }}>
-                    <div className="svc-text">
-                        <div className="svc-num">04</div>
-                        <div className="section-tag">CMS Website</div>
-                        <h2 className="svc-big-title">Powerful, Easy-to-Manage Websites</h2>
-                        <p className="svc-big-desc">
-                            TheDesignSpark provides the best CMS web development solutions available in the market - from large enterprise portals to small business websites, knowledge base systems, and more.
-                        </p>
-                        <ul className="svc-features">
-                            <li>WordPress + Elementor</li>
-                            <li>Custom Themes</li>
-                            <li>Plugin Development</li>
-                            <li>Multi-language Support</li>
-                            <li>Landing Pages</li>
-                            <li>Speed & Security Optimization</li>
-                        </ul>
-                        <a href="/Contact" onMouseMove={handleMove}
-                            onMouseLeave={handleLeave} className="btn btn-primary mt-3 service-btn">Build My Website →</a>
-                    </div>
-
-                    <div className="svc-visual">
-                        <div className="svc-visual-icon">🖥️</div>
-                        <div className="svc-visual-label">CMS Development</div>
-                    </div>
-                </motion.div>
-
-            </section>
-
-            {/* MARKETING */}
-            <section className="container-fluid market-section-bg py-5 section-alt">
-                <div className="container mb-5 px-3 px-sm-0">
-                    <div className="section-tag">Marketing Services</div>
-                    <h2 className="mrkt-section-title">Creating Value Through Marketing</h2>
-                    <p className="section-sub">We work with our customers to create online and offline marketing strategies that match the organization's vision and ethos - driving measurable ROI.</p>
-                </div>
-                <div className="container mb-5 px-3 px-sm-0">
-                    <div className="mkt-wrapper">
-
-                        <div className="mkt-col">
-                            <div className="mkt-card p-3 h-100">
-                                <div className="mkt-icon fs-3">🔍</div>
-                                <div className="mkt-title mt-2">SEO & Content Marketing</div>
-                                <div className="section-sub">Rank higher on Google with on-page, off-page, and SEO combined with compelling content strategy.</div>
-                            </div>
-                        </div>
-
-                        <div className="mkt-col">
-                            <div className="mkt-card p-3 h-100">
-                                <div className="mkt-icon fs-3">📱</div>
-                                <div className="mkt-title mt-2">Social Media Marketing</div>
-                                <div className="section-sub">Grow your brand presence on Facebook, Instagram, LinkedIn, and more with consistent, creative content.</div>
-                            </div>
-                        </div>
-
-                        <div className="mkt-col">
-                            <div className="mkt-card p-3 h-100">
-                                <div className="mkt-icon fs-3">💰</div>
-                                <div className="mkt-title mt-2">Google & Meta Ads</div>
-                                <div className="section-sub">Data-driven paid ad campaigns that target the right audience and maximize your return on ad spend.</div>
-                            </div>
-                        </div>
-
-                        <div className="mkt-col">
-                            <div className="mkt-card p-3 h-100">
-                                <div className="mkt-icon fs-3">📧</div>
-                                <div className="mkt-title mt-2">Email Marketing</div>
-                                <div className="section-sub">Automated email sequences and newsletters that nurture leads and keep your customers engaged.</div>
-                            </div>
-                        </div>
-
-                        <div className="mkt-col">
-                            <div className="mkt-card p-3 h-100">
-                                <div className="mkt-icon fs-3">🎨</div>
-                                <div className="mkt-title mt-2">Graphic Design</div>
-                                <div className="section-sub">Stunning visuals - from social media creatives to brochures, banners, and brand identity assets.</div>
-                            </div>
-                        </div>
-
-                        <div className="mkt-col">
-                            <div className="mkt-card p-3 h-100">
-                                <div className="mkt-icon fs-3">🎬</div>
-                                <div className="mkt-title mt-2">Video Production</div>
-                                <div className="section-sub">Promotional videos, product demos, explainer animations, and reels that captivate your audience.</div>
-                            </div>
-                        </div>
-
-                        <div className="mkt-col">
-                            <div className="mkt-card p-3 h-100">
-                                <div className="mkt-icon fs-3">🖨️</div>
-                                <div className="mkt-title mt-2">Print & Branding</div>
-                                <div className="section-sub">Business cards, flyers, banners, packaging design, and full brand identity kits</div>
-                            </div>
-                        </div>
-
-                        <div className="mkt-col">
-                            <div className="mkt-card p-3 h-100">
-                                <div className="mkt-icon fs-3">📊</div>
-                                <div className="mkt-title mt-2">Analytics & Reporting</div>
-                                <div className="section-sub">Transparent monthly reports with actionable insights on traffic, conversions, and growth metrics.</div>
-                            </div>
-                        </div>
-
-                        <div className="mkt-col">
-                            <div className="mkt-card p-3 h-100">
-                                <div className="mkt-icon fs-3">🌐</div>
-                                <div className="mkt-title mt-2">Local SEO</div>
-                                <div className="section-sub">Dominate local search results with Google Business Profile optimization and local citation building.</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
             </section>
 
             {/* CTA */}

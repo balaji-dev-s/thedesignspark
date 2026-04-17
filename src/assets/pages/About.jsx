@@ -121,7 +121,7 @@ export default function About() {
                                         <div className="blob-icon mb-2">&#128424;</div>
                                         <h3>Printing Solutions Provider</h3>
                                         <p className="svc-big-desc">
-                                            Custom printing & design experience based in Chennai, India.
+                                            Custom printing & design experience<br />based in Chennai, India.
                                         </p>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@ export default function About() {
                         {/* CARD 1 */}
                         <motion.div className="flex-33 p-2" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0 }}>
                             <div className="value-card p-4 h-100">
-                                <div className="value-icon fs-2 mb-2">💡</div>
+                                <div className="value-icon fs-2 mb-2">&#128161;</div>
                                 <div className="mkt-title fw-bold mb-2">Innovation in Print</div>
                                 <p className="section-sub">We adopt modern printing techniques and materials to deliver fresh, high-quality results for every project.</p>
                             </div>
@@ -228,7 +228,7 @@ export default function About() {
                         {/* CARD 2 */}
                         <motion.div className="flex-33 p-2" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.1 }}>
                             <div className="value-card p-4 h-100">
-                                <div className="value-icon fs-2 mb-2">🤝</div>
+                                <div className="value-icon fs-2 mb-2">&#x1F91D;</div>
                                 <div className="mkt-title fw-bold mb-2">Client Partnership</div>
                                 <p className="section-sub">We work closely with every client, building lasting relationships based on trust, transparency, and consistent results.</p>
                             </div>
@@ -237,7 +237,7 @@ export default function About() {
                         {/* CARD 3 */}
                         <motion.div className="flex-33 p-2" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.2 }}>
                             <div className="value-card p-4 h-100">
-                                <div className="value-icon fs-2 mb-2">🎯</div>
+                                <div className="value-icon fs-2 mb-2">&#127919;</div>
                                 <div className="mkt-title fw-bold mb-2">Quality Focused</div>
                                 <p className="section-sub">Every detail from design to final print is handled with precision and a commitment to excellence.</p>
                             </div>
@@ -246,7 +246,7 @@ export default function About() {
                         {/* CARD 4 */}
                         <motion.div className="flex-33 p-2" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.3 }}>
                             <div className="value-card p-4 h-100">
-                                <div className="value-icon fs-2 mb-2">🚀</div>
+                                <div className="value-icon fs-2 mb-2">&#128640;</div>
                                 <div className="mkt-title fw-bold mb-2">On-Time Delivery</div>
                                 <p className="section-sub">We value your deadlines. Our efficient process ensures every print job is delivered on time, every time.</p>
                             </div>
@@ -264,7 +264,7 @@ export default function About() {
                         {/* CARD 6 */}
                         <motion.div className="flex-33 p-2" variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ delay: 0.5 }}>
                             <div className="value-card p-4 h-100">
-                                <div className="value-icon fs-2 mb-2">📈</div>
+                                <div className="value-icon fs-2 mb-2">&#128200;</div>
                                 <div className="mkt-title fw-bold mb-2">Scalable Solutions</div>
                                 <p className="section-sub">As your business grows, our printing solutions evolve with you from small runs to large-scale production.</p>
                             </div>
